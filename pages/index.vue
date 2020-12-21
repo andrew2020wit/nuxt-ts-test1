@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">nuxt-ts-test1</h1>
     </div>
   </div>
