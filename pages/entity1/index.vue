@@ -4,4 +4,6 @@
     ul
       li
         NuxtLink(to='/entity1/10') Go to entity 10
+      li
+        NuxtLink(to='/entity1/13') Go to entity 13 (redirect to Home)
 </template>
