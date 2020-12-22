@@ -10,6 +10,8 @@
           <b-navbar-nav>
             <b-nav-item to="/">Home</b-nav-item>
             <b-nav-item to="/page1">Page1</b-nav-item>
+            <b-nav-item to="/page2">Page2</b-nav-item>
+            <b-nav-item to="/entity1">Entity1</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
