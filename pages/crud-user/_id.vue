@@ -25,9 +25,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import { apiUrl } from '@/const'
-export default {
+export default Vue.extend({
   async asyncData({ $axios, params }) {
     const point = apiUrl + '/main/crud-rest/0/user/' + params.id
     const usersExt = await $axios.$get(point)
@@ -51,7 +52,7 @@ export default {
         })
         .then((response) => {
           console.log(response)
-          this.$router.go()
+          this.$router.go(0)
         })
     },
     async deleteEntity() {
@@ -62,5 +63,5 @@ export default {
       })
     },
   },
-}
+})
 </script>

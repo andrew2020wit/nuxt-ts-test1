@@ -24,9 +24,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import { apiUrl } from '@/const'
-export default {
+export default Vue.extend({
   data() {
     return { name: 'fsdf', age: 22 }
   },
@@ -38,9 +39,9 @@ export default {
         .$post(point, { name: this.name, age: this.age })
         .then((response) => {
           console.log(response)
-          this.$router.go()
+          this.$router.go(0)
         })
     },
   },
-}
+})
 </script>
