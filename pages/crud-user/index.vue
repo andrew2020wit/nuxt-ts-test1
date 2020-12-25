@@ -6,6 +6,7 @@
     ol
       li(v-for="item in users" :key="item.id")
         NuxtLink(:to="baseUrl+item.id") {{item.name}}, age: {{item.age}}
+    <MultyCreate/>
 </template>
 
 <script lang="ts">
