@@ -10,6 +10,8 @@
           <b-navbar-nav>
             <b-nav-item to="/">Home</b-nav-item>
             <b-nav-item to="/crud-user">Crud-Users</b-nav-item>
+            <b-nav-item to="/auth-protected-page">AuthProtectedPage</b-nav-item>
+            <b-nav-item to="/page2">Page2</b-nav-item>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
