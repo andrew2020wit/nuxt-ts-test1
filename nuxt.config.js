@@ -36,7 +36,32 @@ export default {
     '@nuxtjs/auth-next',
   ],
 
-  auth: {},
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'access_token',
+          // required: true,
+          // type: 'Bearer'
+        },
+        user: {
+          property: 'fullName',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: {
+            url: 'http://localhost:3001/api/jwt-auth/get-token',
+            method: 'post',
+          },
+          logout: false,
+          user: {
+            url: 'http://localhost:3001/api/jwt-auth/get-user-profile',
+            method: 'get',
+          },
+        },
+      },
+    },
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
